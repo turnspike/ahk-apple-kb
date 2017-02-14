@@ -1,14 +1,18 @@
 # AutoHotkey Apple-kb
 
-This script enhances the use of a wireless Apple Keyboard in Windows restricted environments where driver installation and registry changes are disallowed.
+## Precis
+This script enhances the use of a tenkeyless/wireless Apple Keyboard in restricted Windows environments where driver installation and registry changes are disallowed.
 
-This script requires [AutoHotkey](https://autohotkey.com/download/), a freeware scripting system that can be run without Administrator rights.
+## Requirements
+  * [AutoHotkey](https://autohotkey.com/download/), a freeware scripting system that does not require Administrator rights.
 
 ## Essential Key Combos
 
-  * __PageUp:__ control-alt-up
-  * __PageDown:__ control-alt-down
-  * __Home:__ control-alt-left
-  * __End:__ control-alt-right
-  * __Delete:__ control-backspace
-  * __Task Manager:__ control-alt-backspace
+| Output        | Input|
+| ------------- |:----:|
+| **PageUp**    | control-alt-up|
+| **PageDown**  | control-alt-down|
+| **Home**      | control-alt-left|
+| **End**       | control-alt-right|
+| **Delete**    | control-backspace|
+| **Task Manager**| control-alt-backspace|
