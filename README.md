@@ -1,6 +1,8 @@
 # AutoHotkey Apple-kb
 
-## Precis
+![apple wireless keyboard](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/keyboards/wireless_keyboard_hero.png)
+
+## Overview
 This script enhances the use of a tenkeyless/wireless Apple Keyboard in restricted Windows environments where driver installation and registry changes are disallowed.
 
 ## Requirements
