@@ -12,7 +12,7 @@ This script enhances the use of a tenkeyless/wireless/magic Apple Keyboard in re
 A system tray icon with a green-and-white H should now be visible, and the key combinations available.
 
 ## Requirements
-  * [AutoHotkey](https://autohotkey.com/download/), a freeware scripting system that does not require Administrator rights.
+  * [AutoHotkey](https://autohotkey.com/download/), a freeware scripting system usable without Administrator rights.
 
 ## Essential Key Combos
 
