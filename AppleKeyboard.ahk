@@ -10,13 +10,13 @@ SendMode, Input ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir, %A_ScriptDir% ; Change the working directory of the script
 SetBatchLines, -1 ; Run script at maximum speed
 
-^Left::Send {Home} ; control-left is home
+^!Left::Send {Home} ; control-alt-left is home
 
-^Right::Send {End} ; control-right is end
+^!Right::Send {End} ; control-alt-right is end
 
-^Up::Send {PgUp} ; control-up is page up
+^!Up::Send {PgUp} ; control-alt-up is page up
 
-^Down::Send {PgDn} ; control-down is page down
+^!Down::Send {PgDn} ; control-alt-down is page down
 
 ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 
