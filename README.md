@@ -6,9 +6,9 @@ This script requires [AutoHotkey](https://autohotkey.com/download/), a freeware 
 
 ## Essential Key Combos
 
-  * **PageUp**: control-alt-up
-  * **PageDown**: control-alt-down
-  * **Home**: control-alt-left
-  * **End**: control-alt-right
-  * **Delete**: control-backspace
-  * **Task Manager**: control-alt-backspace
+  * **PageUp:** control-alt-up
+  * **PageDown:** control-alt-down
+  * **Home:** control-alt-left
+  * **End:** control-alt-right
+  * **Delete:** control-backspace
+  * **Task Manager:** control-alt-backspace
