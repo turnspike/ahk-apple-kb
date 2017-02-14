@@ -30,6 +30,7 @@ ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 <#s::Send, ^s ; lwin-s is save
 <#o::Send, ^o ; lwin-o is open
 <#a::Send, ^a ; lwin-a is select all
+<#w::Send, ^w ; lwin-w is close tab
 <#q::Send !{f4} ; lwin-q is quit
 
 ;;-- system functions
