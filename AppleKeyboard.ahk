@@ -5,6 +5,7 @@
 #Persistent ; Keep script permanently running until terminated
 #NoEnv ; Avoid checking empty variables to see if they are environment variables
 #Warn ; Enable warnings to assist with detecting common errors
+#InstallKeybdHook ; Use keyboard hook for extra kb functions
 SendMode, Input ; Recommended for new scripts due to its superior speed and reliability
 SetBatchLines, -1 ; Run script at maximum speed
 
@@ -23,19 +24,27 @@ ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 
 ;;-- commonly used apple key combos
 
-<#c::Send, ^c ; lwin-c is copy
-<#x::Send, ^x ; lwin-x is cut
-<#v::Send, ^v ; lwin-v is paste
-<#z::Send, ^z ; lwin-z is undo
-<#s::Send, ^s ; lwin-s is save
-<#o::Send, ^o ; lwin-o is open
-<#a::Send, ^a ; lwin-a is select all
-<#w::Send, ^w ; lwin-w is close tab
-<#q::Send !{f4} ; lwin-q is quit
+#c::Send ^c ; win-c is copy
+#x::Send ^x ; win-x is cut
+#v::Send ^v ; win-v is paste
+#z::Send ^z ; win-z is undo
+#y::Send ^y ; win-y is redo
+#s::Send ^s ; win-s is save
+#o::Send ^o ; win-o is open
+#a::Send ^a ; win-a is select all
+#f::Send ^f ; win-f is find
+#h::Send ^h ; win-h is replace
+#w::Send ^w ; win-w is close tab
+#t::Send ^t ; win-t is new tab
+#q::Send !{f4} ; win-q is quit
+;;#=::Send ^= ; win-= is zoom in
+;;#+::Send ^+ ; win-+ is zoom in
+;;#-::Send ^- ; win-- is zoom out
+;;Lwin & Tab::Send !{Tab} ; lwin-tab doesn't work
 
 ;;-- system functions
 
-$^!backspace::send, {lcontrol}{lalt}{delete} ; control-alt-backspace is control-alt-delete
+$^!backspace::Send {lcontrol}{lalt}{delete} ; control-alt-backspace is control-alt-delete
 +#3::Send {PrintScreen} ; shift-win-3 is printscreen
 ;; #Space::Send {!Space} ; remap win+space to alt+space
 
@@ -51,6 +60,7 @@ $^!backspace::send, {lcontrol}{lalt}{delete} ; control-alt-backspace is control-
 ;;-- Chrome
 
 #IfWinActive ahk_exe chrome.exe
-+#Left:: Send, +^{Tab}
-+#Right:: Send, ^{Tab}
++#Left:: Send +^{Tab}
++#Right:: Send ^{Tab}
+#R:: Send ^r
 #IfWinActive
