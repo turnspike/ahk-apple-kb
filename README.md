@@ -7,7 +7,7 @@ This script enhances the use of a tenkeyless/wireless/magic Apple Keyboard in re
 ## Usage
 
 1. Download AppleKeyboard.ahk from this repository
-2. Open the script with AutoHotkey, or drag AppleKeyboard.ahk onto C:\...\AutoHotkey\AutoHotkeyU32.exe (U64.exe can also be used if your machine supports 64-bit)
+2. Open the script with AutoHotkey, or drag AppleKeyboard.ahk onto C:\\...\AutoHotkey\AutoHotkeyU32.exe (U64.exe can also be used if your machine supports 64-bit)
 
 A system tray icon with a green-and-white H should now be visible, and the key combinations available.
 
