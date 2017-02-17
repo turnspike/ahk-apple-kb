@@ -30,6 +30,7 @@ ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 #z::Send ^z ; win-z is undo
 #y::Send ^y ; win-y is redo
 #s::Send ^s ; win-s is save
+#n::Send ^n ; win-n is new
 #o::Send ^o ; win-o is open
 #a::Send ^a ; win-a is select all
 #f::Send ^f ; win-f is find
@@ -41,6 +42,7 @@ ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 ;;#+::Send ^+ ; win-+ is zoom in
 ;;#-::Send ^- ; win-- is zoom out
 ;;Lwin & Tab::Send !{Tab} ; lwin-tab doesn't work
+LWin & Tab::Send !{Tab}
 
 ;;-- system functions
 
@@ -64,3 +66,6 @@ $^!backspace::Send {lcontrol}{lalt}{delete} ; control-alt-backspace is control-a
 +#Right:: Send ^{Tab}
 #R:: Send ^r
 #IfWinActive
+
+;;-- Cygin
+;;TODO map win-c to shift-ctrl-c etc
