@@ -41,8 +41,7 @@ ctrl & backspace::sendinput, {delete} ; control-backspace is delete
 ;;#=::Send ^= ; win-= is zoom in
 ;;#+::Send ^+ ; win-+ is zoom in
 ;;#-::Send ^- ; win-- is zoom out
-;;Lwin & Tab::Send !{Tab} ; lwin-tab doesn't work
-LWin & Tab::Send !{Tab}
+LWin & Tab::AltTab
 
 ;;-- system functions
 
